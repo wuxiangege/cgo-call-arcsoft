@@ -1,0 +1,73 @@
+﻿////////////////////////////////////////////////////////////////////////////////
+//                   		ArcSoft Face Library 		      	              //        
+////////////////////////////////////////// /////////////////////////////////////
+
+Introduction:
+ArcSoft Face Library provides the universal interfaces to detect different face feature.
+
+Publish date:
+07/29/2020
+
+Expire date：
+08/22/2023
+
+Version:
+3.0.12402010101.3
+
+Supported platform:
+linux_x64
+
+Compile Options:
+default
+
+Dependency:
+none
+
+Known issues:
+None.
+
+File List:
+|---doc
+|   |---ARCSOFT_ARC_FACE_DEVELOPER'S_GUIDE.pdf   		开发说明文档
+|---inc
+|   |---amcomdef.h                  					平台文件
+|   |---asvloffscreen.h                                	平台文件
+|   |---arcsoft_face_sdk.h                             	接口文件
+|   |---merror.h                                       	错误码文件
+|---lib
+|   |---linux_x64
+|   |   |---libarcsoft_face.so             				算法库
+|   |   |---libarcsoft_face_engine.so            		引擎库 
+|---samplecode
+|   |---ASFTestDemo                                 	示例Demo
+|   |---ReadMe.txt                                     	Demo使用说明
+|---releasenotes.txt                                    说明文件
+
+
+Change Logs:
+2020/07/29
+1.优化激活方案以及算法接口；
+
+2019/12/31
+1.激活和初始化接口加锁保护；
+2.更新活体、年龄、性别、人脸检测、人脸比对算法模型；
+3.IMAGE模式支持全角度以及单一角度；
+4.新增人证模式的人脸特征比对模型；
+5.新增一组接口，用于兼容更高精度的图像；
+6.初始化接口中检测模式参数变更为枚举类型；
+7.全角度宏由ASF_OP_0_HIGHER_EXT变更为ASF_OP_ALL_OUT；
+8.此版本对人脸特征模型进行了升级，导致与2.X版本的模型不匹配，需要对2.X版本的人脸库进行重新注册；
+9.活体检测推荐阈值变更，RGB：0.5  IR：0.7;
+
+2019/03/08
+1.更新算法库、copyright；
+
+2019/06/20
+1.更新RGB活体算法库;
+2.添加IR活体检测；
+3.更新人脸检测算法库；
+4.IMAGE模式下仅支持传入单一角度，不再支持全角度检测；
+5.IMAGE模式下scale开放的范围为[2,32]，推荐值为30；
+6.VIDEO模式下scale开放的范围从[2,16]修改为[2,32]，推荐值为16；
+7.VIDEO模式下开放FaceId参数，用于追踪是否为同一张人脸，IMAGE模式下未开放；
+8.更新激活方案；
