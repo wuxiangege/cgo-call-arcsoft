@@ -1,6 +1,6 @@
 # cgo-call-arcsoft
 
-cgo 调用虹软视觉 sdk，实现人脸识别
+cgo 调用[虹软视觉](https://ai.arcsoft.com.cn/ucenter/resource/build/index.html#/login?redirect=https%3A%2F%2Fai.arcsoft.com.cn%2Fucenter%2Fresource%2Fbuild%2Findex.html%23%2Fapplication) sdk，实现人脸识别
 
 # 我的动态库架构
 
